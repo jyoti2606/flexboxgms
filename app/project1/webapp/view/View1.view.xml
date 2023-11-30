@@ -1,0 +1,55 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page id="_IDGenPage1">
+        <HBox id="_IDGenHBox1" class = "css2">
+            <Label
+                id="_IDGenLabel1"
+                text="Document Type:"
+                class = "css3"
+            />
+            <Select
+                id="docType"
+                width="150px"
+            >
+                <core:Item
+                    id="_IDGenItem1"
+                    text="GPA(Gas Purchase Agreement)"
+                />
+                <core:Item
+                    id="_IDGenItem2"
+                    text="GPTA(Gas Purchase Transport Agreement)"
+                />
+                <core:Item
+                    id="_IDGenItem3"
+                    text="GTA(Gas Transportation Agreement)"
+                />
+                <core:Item
+                    id="_IDGenItem4"
+                    text="GPSA(Gas Purchase Storage Agreement)"
+                />
+                <core:Item
+                    id="_IDGenItm4"
+                    text="GSA(Gas Sales Agreement)"
+                />
+                <core:Item
+                    id="_IDGenItm6"
+                    text="GSSA(Gas Storage Sales Agreement)"
+                />
+            </Select>
+
+            
+                
+                <Button
+                    id="button"
+                    text="GO"
+                    press=".onItems"
+                />
+        </HBox>
+    </Page>
+</mvc:View>
