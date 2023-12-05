@@ -64,7 +64,12 @@
                                             id="_IDGenLabel2"
                                             text="Document type :"
                                         />
-                                        <Input id="_IDGnInput21" value="Gas purchase Transport Agreement" editable="false" width="270px"/>
+                                        <Input
+                                            id="_IDGnInput21"
+                                            value="Gas purchase Transport Agreement"
+                                            editable="false"
+                                            width="270px"
+                                        />
                                     </HBox>
                                 </VBox>
                             </f:content>
@@ -81,69 +86,71 @@
                                 </Toolbar>
                             </f:toolbar>
                             <f:content>
-                            <VBox id="_IDGenVBox32" class = "main">
-                                <VBox id="_IDGenVBox224" >
-                                <Label
-                                    id="_IDGenLabel1"
-                                    text="Supplier"
-                                />
-                                <Input
-                                    id="_IDGenInput1"
-                                    width="200px"
-                                />
+                                <VBox
+                                    id="_IDGenVBox32"
+                                    class="main"
+                                >
+                                    <VBox id="_IDGenVBox224">
+                                        <Label
+                                            id="_IDGenLabel1"
+                                            text="Supplier"
+                                        />
+                                        <Input
+                                            id="_IDGenInput1"
+                                            width="200px"
+                                        />
 
-                                <Label
-                                    id="_IDGenLabel8"
-                                    text="Purchase Org."
-                                />
-                                <Input
-                                    id="_IDGenInput2"
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel8"
+                                            text="Purchase Org."
+                                        />
+                                        <Input
+                                            id="_IDGenInput2"
+                                            width="200px"
+                                        />
 
-                                <Label
-                                    id="_IDGenLabel3"
-                                    text="Purchase Group"
-                                />
-                                <Input
-                                    id="_IDGenInput3"
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel3"
+                                            text="Purchase Group"
+                                        />
+                                        <Input
+                                            id="_IDGenInput3"
+                                            width="200px"
+                                        />
 
-                                <Label
-                                    id="_IDGenLabel4"
-                                    text="Company Code"
-                                />
-                                <Input
-                                    id="_IDGenInput4"
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel4"
+                                            text="Company Code"
+                                        />
+                                        <Input
+                                            id="_IDGenInput4"
+                                            width="200px"
+                                        />
+                                    </VBox>
 
-                                </VBox>
+                                    <VBox id="_IDGenVBox23">
+                                        <Label
+                                            id="_IDGenLabel5"
+                                            text="Start Date"
+                                        />
+                                        <DatePicker
+                                            id="DP1"
+                                            placeholder="‎"
+                                            change="handleChange"
+                                            width="150px"
+                                        />
 
-                                <VBox id="_IDGenVBox23">
-                                <Label
-                                    id="_IDGenLabel5"
-                                    text="Start Date"
-                                />
-                                <DatePicker
-                                    id="DP1"
-                                    placeholder="‎"
-                                    change="handleChange"
-                                    width="150px"
-                                />
-
-                                <Label
-                                    id="_IDGenLabel6"
-                                    text="End Date"
-                                />
-                                <DatePicker
-                                    id="DP2"
-                                    placeholder="‎"
-                                    change="handleChange"
-                                    width="150px"
-                                />
-                                </VBox>
+                                        <Label
+                                            id="_IDGenLabel6"
+                                            text="End Date"
+                                        />
+                                        <DatePicker
+                                            id="DP2"
+                                            placeholder="‎"
+                                            change="handleChange"
+                                            width="150px"
+                                        />
+                                    </VBox>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
@@ -157,7 +164,7 @@
                 text="Items Detail"
                 iconColor="Default"
             >
-                 <ScrollContainer
+                <ScrollContainer
                     id="_IDGenScrollContainer2"
                     vertical="true"
                     height="100%"
@@ -192,220 +199,236 @@
                                 />
                             </layoutData>
                         </ToolbarSpacer>
-                        
+
                         <tnt:ToolHeaderUtilitySeparator
                             id="_IDGenToolHeaderUtilitySeparator2"
                         />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer6"
-                           
+                        <ToolbarSpacer
+                            id="_IDGenToolbarSpacer6"
                             width="1.125rem"
                         />
                     </tnt:ToolHeader>
                     <Panel id="_IDGenPanel2">
-
-                        <f:SimpleForm id="_IDGenSimpleForm4" >
+                        <f:SimpleForm id="_IDGenSimpleForm4">
                             <f:toolbar>
-                                <Toolbar id="_IDGenToolbar3" >
+                                <Toolbar id="_IDGenToolbar3">
                                     <Title
                                         id="_IDGenTitle3"
                                         text="Item Details"
                                     />
-                                    <ToolbarSpacer id="_IDGenToolbarSpacer7"  />
+                                    <ToolbarSpacer id="_IDGenToolbarSpacer7" />
                                 </Toolbar>
                             </f:toolbar>
                             <f:content>
-                                <VBox id="_ID" class = "main">
-                                <VBox id="_IDGenVBox255" >
-                                <Label id="_IDGenLabel21"
-                                    
-                                    text="Material"
-                                />
-                                <Input id="_IDGenInput21"
-                                    
-                                    width="200px"
-                                />
+                                <VBox
+                                    id="_ID"
+                                    class="main"
+                                >
+                                    <VBox id="_IDGenVBox255">
+                                        <Label
+                                            id="_IDGenLabel21"
+                                            text="Material"
+                                        />
+                                        <Input
+                                            id="_IDGenInput21"
+                                            width="200px"
+                                        />
 
-                                <Label id="_IDGenLabel13"
-                                   
-                                    text="UOM"
-                                />
-                                <Input id="_IDGenInput123"
-                                   
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel13"
+                                            text="UOM"
+                                        />
+                                        <Input
+                                            id="_IDGenInput123"
+                                            width="200px"
+                                        />
 
-                                <Label id="_IDGenLabel14"
-                                    
-                                    text="Plant"
-                                />
-                                <Input id="_IDGenInput13"
-                                    
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel14"
+                                            text="Plant"
+                                        />
+                                        <Input
+                                            id="_IDGenInput13"
+                                            width="200px"
+                                        />
 
-                                <Label id="_IDGenLabel15"
-                                    
-                                    text="Storage Location"
-                                />
-                                <Input id="_IDGenInput14"
-                                    
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel15"
+                                            text="Storage Location"
+                                        />
+                                        <Input
+                                            id="_IDGenInput14"
+                                            width="200px"
+                                        />
+                                    </VBox>
 
-                                </VBox>
+                                    <VBox id="_IDGenVBox26">
+                                        <Label
+                                            id="_IDGenLabel16"
+                                            text="Path"
+                                        />
+                                        <Input
+                                            id="_IDGenInput16"
+                                            width="200px"
+                                        />
 
-                                <VBox id="_IDGenVBox26">
-                                <Label id="_IDGenLabel16"
-                                    
-                                    text="Path"
-                                />
-                                <Input id="_IDGenInput16"
-                                    
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel17"
+                                            text="Transport system"
+                                        />
+                                        <Input
+                                            id="_IDGenInput17"
+                                            width="200px"
+                                        />
 
-                                
-
-                                <Label id="_IDGenLabel17"
-                                    
-                                    text="Transport system"
-                                />
-                               <Input id="_IDGenInput17"
-                                    
-                                    width="200px"
-                                />
-
-                                <Label id="_IDGenLabel18"
-                                    
-                                    text="Currency"
-                                />
-                               <Input id="_IDGenInput18"
-                                    
-                                    width="200px"
-                                />
-                                </VBox>
+                                        <Label
+                                            id="_IDGenLabel18"
+                                            text="Currency"
+                                        />
+                                        <Input
+                                            id="_IDGenInput18"
+                                            width="200px"
+                                        />
+                                    </VBox>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
                     </Panel>
                 </ScrollContainer>
-                
             </IconTabFilter>
             <IconTabFilter
                 id="_IDGenIconTabFilter3"
                 icon="sap-icon://accept"
                 text="Service catalogue"
             >
-                <ScrollContainer id="_IDGenScrollContainer3"
-                    
+                <ScrollContainer
+                    id="_IDGenScrollContainer3"
                     vertical="true"
                     height="100%"
                 >
-                    <tnt:ToolHeader id="_IDGenToolHeader1"
-                        
+                    <tnt:ToolHeader
+                        id="_IDGenToolHeader1"
                         class="sapUiTinyMargin"
                     >
-                        <ToolbarSpacer id="_IDGenToolbarSpacer8"
-                            
+                        <ToolbarSpacer
+                            id="_IDGenToolbarSpacer8"
                             width="500px"
                         />
-                        <Title id="_IDGenTitle6"
+                        <Title
+                            id="_IDGenTitle6"
                             text="Purchase Contract"
                             wrapping="true"
-                            
                         >
                             <layoutData>
-                                <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData8"
-                                    
+                                <OverflowToolbarLayoutData
+                                    id="_IDGenOverflowToolbarLayoutData8"
                                     priority="Disappear"
                                 />
                             </layoutData>
                         </Title>
-                        <ToolbarSpacer id="_IDGenToolbarSpacer9"  />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer10" >
+                        <ToolbarSpacer id="_IDGenToolbarSpacer9" />
+                        <ToolbarSpacer id="_IDGenToolbarSpacer10">
                             <layoutData>
-                                <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData9"
-                                    
+                                <OverflowToolbarLayoutData
+                                    id="_IDGenOverflowToolbarLayoutData9"
                                     priority="Low"
                                     group="1"
                                 />
                             </layoutData>
                         </ToolbarSpacer>
-                        
-                        <tnt:ToolHeaderUtilitySeparator id="_IDGenToolHeaderUtilitySeparator3"
-                            
+
+                        <tnt:ToolHeaderUtilitySeparator
+                            id="_IDGenToolHeaderUtilitySeparator3"
                         />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer11" 
-                           
+                        <ToolbarSpacer
+                            id="_IDGenToolbarSpacer11"
                             width="1.125rem"
                         />
                     </tnt:ToolHeader>
-                    <Panel id="_IDGenPanel3" >
-
-                        <f:SimpleForm id="_IDGenSimpleForm5"  >
+                    <Panel id="_IDGenPanel3">
+                        <f:SimpleForm id="_IDGenSimpleForm5">
                             <f:toolbar>
-                                <Toolbar id="_IDGenToolbar4"  >
-                                    <Title id="_IDGenTitle7"
-                                        
+                                <Toolbar id="_IDGenToolbar4">
+                                    <Title
+                                        id="_IDGenTitle7"
                                         text="Service Catalog"
                                     />
-                                    <ToolbarSpacer id="_IDGenToolbarSpacer12"   />
+                                    <ToolbarSpacer id="_IDGenToolbarSpacer12" />
                                 </Toolbar>
                             </f:toolbar>
                             <f:content>
-                                <VBox id="_IDGenVBox27" class = "main">
-                                <VBox id="_IDGenVBox28">
-                                <Label id="_IDGenLabel" 
-                                    
-                                    text="Service Type"
-                                />
-                                <Input id="_IDGenInput20" 
-                                    
-                                    width="200px"
-                                />
+                                <VBox
+                                    id="_IDGenVBox27"
+                                    class="main"
+                                >
+                                    <VBox id="_IDGenVBox28">
+                                        <Label
+                                            id="_IDGenLabel"
+                                            text="Service Type"
+                                        />
+                                        <Select
+                                            id="_IDGenSelect1"
+                                            items="{
+						                      path: '/service_type'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDGenItem1"
+                                                text="{Service_Type}"
+                                            />
+                                        </Select>
 
-                                <Label id="_IDGenLabel43" 
-                                   
-                                    text="Service Level"
-                                />
-                                <Input id="_IDGenInput188" 
-                                   
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel43"
+                                            text="Service Level"
+                                        />
+                                        <Select
+                                            id="_IDGenSelct1"
+                                            items="{
+						                      path: '/service_level'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDenItem1"
+                                                text="{Service_level}"
+                                            />
+                                        </Select>
 
-                                <Label id="_IDGenLabel134" 
-                                    
-                                    text="MOT"
-                                />
-                                <Input id="_IDGenInput19" 
-                                    
-                                    width="200px"
-                                />
+                                        <Label
+                                            id="_IDGenLabel134"
+                                            text="MOT"
+                                        />
+                                        <Select
+                                            id="_IDGenelct1"
+                                            items="{
+						                      path: '/MOT'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDnItem1"
+                                                text="{MoT}"
+                                            />
+                                        </Select>
+                                    </VBox>
+                                    <VBox id="_IDGenVBox29">
+                                        <Label
+                                            id="_IDGenLabel87"
+                                            text="Fuel%"
+                                        />
+                                        <Input
+                                            id="_IDGenInput98"
+                                            width="200px"
+                                        />
 
-                                
-
-                                </VBox>
-                                <VBox id="_IDGenVBox29">
-                               
-
-                                <Label id="_IDGenLabel87" 
-                                    
-                                    text="Fuel%"
-                                />
-                               <Input id="_IDGenInput98" 
-                                    
-                                    width="200px"
-                                />
-
-                                <Label id="_IDGenLabel987" 
-                                    
-                                    text="Fuel Provider"
-                                />
-                               <Input id="_IDGenInput23" 
-                                    
-                                    width="200px"
-                                />
-                                </VBox>
+                                        <Label
+                                            id="_IDGenLabel987"
+                                            text="Fuel Provider"
+                                        />
+                                        <Input
+                                            id="_IDGenInput23"
+                                            width="200px"
+                                        />
+                                    </VBox>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
@@ -418,11 +441,10 @@
                 icon="sap-icon://accept"
                 text="Service catalogue-clauses"
             >
-             
                 <ScrollContainer
                     id="_IDGenScrollContainer34"
                     vertical="true"
-                    height="100%"
+                    height="475px"
                 >
                     <tnt:ToolHeader
                         id="_IDGenToolHeader134"
@@ -444,20 +466,7 @@
                                 />
                             </layoutData>
                         </Title>
-                        <ToolbarSpacer id="_IDGenToolbarSpacer99" />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer15">
-                            <layoutData>
-                                <OverflowToolbarLayoutData
-                                    id="_IDGenOverflowToolbarLayoutData93"
-                                    priority="Low"
-                                    group="1"
-                                />
-                            </layoutData>
-                        </ToolbarSpacer>
 
-                        <tnt:ToolHeaderUtilitySeparator
-                            id="_IDGenToolHeaderUtilitySeparator32"
-                        />
                         <ToolbarSpacer
                             id="_IDGenToolbarSpacer231"
                             width="1.125rem"
@@ -471,7 +480,9 @@
                                         id="_IDGenTitle71"
                                         text="Service Catalog"
                                     />
-                                    <ToolbarSpacer id="_IDGenToolbarSpacer121" />
+                                    <ToolbarSpacer
+                                        id="_IDGenToolbarSpacer121"
+                                    />
                                 </Toolbar>
                             </f:toolbar>
                             <f:content>
@@ -496,19 +507,28 @@
                                             id="_IDGnInput87"
                                             width="200px"
                                         />
-
-                                        
                                     </VBox>
                                     <VBox id="_IDGenVBox2">
                                         <Label
                                             id="_IDGenLabel10"
                                             text="Overrun allowed"
                                         />
-                                        <Input
-                                            id="_IDGenInput"
-                                            width="200px"
-                                        />
-
+                                        <RadioButtonGroup
+                                            id="rbg3"
+                                            columns="2"
+                                            selectedIndex="2"
+                                           
+                                        >
+                                            <RadioButton
+                                                id="R2-2"
+                                                text="Yes"
+                                            />
+                                            <RadioButton
+                                                id="RB22"
+                                                text="No"
+                                               
+                                            />
+                                        </RadioButtonGroup>
                                     </VBox>
                                 </VBox>
                             </f:content>
@@ -534,10 +554,20 @@
                                             id="_IDGenLabel656"
                                             text="Take or pay"
                                         />
-                                        <Input
-                                            id="_IDGenInput876"
-                                            width="200px"
-                                        />
+                                        <RadioButtonGroup
+                                            id="rbg2"
+                                            columns="2"
+                                            selectedIndex="2"
+                                        >
+                                            <RadioButton
+                                                id="RB2-1"
+                                                text="Yes"
+                                            />
+                                            <RadioButton
+                                                id="RB2-2"
+                                                text="No"
+                                            />
+                                        </RadioButtonGroup>
 
                                         <Label
                                             id="_IDGenLabelq2"
@@ -563,13 +593,11 @@
                                             id="_IDGenInut6132"
                                             width="200px"
                                         />
-
-                                        
                                     </VBox>
                                     <VBox id="_IDGenVBox62">
                                         <Label
                                             id="_IDGenLabel106"
-                                            text="Overrun allowed"
+                                            text="Over drawl"
                                         />
                                         <Input
                                             id="_IDGenInput343"
@@ -578,7 +606,7 @@
 
                                         <Label
                                             id="_IDGenLabel1062"
-                                            text="Underrun allowed"
+                                            text="Under drawl"
                                         />
                                         <Input
                                             id="_IDGenInput6"
@@ -600,13 +628,17 @@
                                             id="_IDGenInpu61"
                                             width="200px"
                                         />
-
                                     </VBox>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
+                        <f:SimpleForm id="_IDGenSimpleForm6" >
+                            <f:content>
+                                <Button id="_IDGenButton1" text="Submit" width="100px" class = "btn"></Button>
+                            </f:content>
+                        </f:SimpleForm>
                     </Panel>
-                </ScrollContainer>       
+                </ScrollContainer>
             </IconTabFilter>
         </items>
     </IconTabBar>

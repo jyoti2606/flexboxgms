@@ -43,7 +43,6 @@
                                 />
                             </layoutData>
                         </Title>
-                        
 
                         <ToolbarSpacer
                             id="_IDGenToolbarSpacer2"
@@ -66,7 +65,12 @@
                                             id="_IDGenLabel2"
                                             text="Document type :"
                                         />
-                                    <Input id="_IDGenInput31" width="200px" editable="false" value="Gas purchase Agreement"/>
+                                        <Input
+                                            id="_IDGenInput31"
+                                            width="200px"
+                                            editable="false"
+                                            value="Gas purchase Agreement"
+                                        />
                                     </HBox>
                                 </VBox>
                             </f:content>
@@ -325,19 +329,6 @@
                             </layoutData>
                         </Title>
                         <ToolbarSpacer id="_IDGenToolbarSpacer9" />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer10">
-                            <layoutData>
-                                <OverflowToolbarLayoutData
-                                    id="_IDGenOverflowToolbarLayoutData9"
-                                    priority="Low"
-                                    group="1"
-                                />
-                            </layoutData>
-                        </ToolbarSpacer>
-
-                        <tnt:ToolHeaderUtilitySeparator
-                            id="_IDGenToolHeaderUtilitySeparator3"
-                        />
                         <ToolbarSpacer
                             id="_IDGenToolbarSpacer11"
                             width="1.125rem"
@@ -364,28 +355,51 @@
                                             id="_IDGenLabel"
                                             text="Service Type"
                                         />
-                                        <Input
-                                            id="_IDGenInput20"
-                                            width="200px"
-                                        />
+
+                                        <Select
+                                            id="_IDGenSelect1"
+                                            items="{
+						                      path: '/service_type'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDGenItem1"
+                                                text="{Service_Type}"
+                                            />
+                                        </Select>
 
                                         <Label
                                             id="_IDGenLabel43"
                                             text="Service Level"
                                         />
-                                        <Input
-                                            id="_IDGenInput188"
-                                            width="200px"
-                                        />
+                                        <Select
+                                            id="_IDGenSelct1"
+                                            items="{
+						                      path: '/service_level'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDenItem1"
+                                                text="{Service_level}"
+                                            />
+                                        </Select>
 
                                         <Label
                                             id="_IDGenLabel134"
                                             text="MOT"
                                         />
-                                        <Input
-                                            id="_IDGenInput19"
-                                            width="200px"
-                                        />
+
+                                        <Select
+                                            id="_IDGenelct1"
+                                            items="{
+						                      path: '/MOT'
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDnItem1"
+                                                text="{MoT}"
+                                            />
+                                        </Select>
 
                                         <Label
                                             id="_IDGenLabel32"
@@ -419,10 +433,21 @@
                                             id="_IDGenLabel987"
                                             text="Fuel Provider"
                                         />
-                                        <Input
-                                            id="_IDGenInput23"
-                                            width="200px"
-                                        />
+                                        <Select
+                                            id="_IDGenelc1"
+                                            items="{
+						                      path: '/Fuel_provider',
+                                              sorter: {
+                                                path: 'Fuel_provider',
+                                                 descending: true
+                                                     }
+					                             }"
+                                        >
+                                            <core:Item
+                                                id="_IDntem1"
+                                                text="{Fuel_provider}"
+                                            />
+                                        </Select>
                                     </VBox>
                                 </VBox>
                             </f:content>
@@ -439,7 +464,7 @@
                 <ScrollContainer
                     id="_IDGenScrollContainer34"
                     vertical="true"
-                    height="100%"
+                    height="475px"
                 >
                     <tnt:ToolHeader
                         id="_IDGenToolHeader134"
@@ -462,19 +487,7 @@
                             </layoutData>
                         </Title>
                         <ToolbarSpacer id="_IDGenToolbarSpacer99" />
-                        <ToolbarSpacer id="_IDGenToolbarSpacer15">
-                            <layoutData>
-                                <OverflowToolbarLayoutData
-                                    id="_IDGenOverflowToolbarLayoutData93"
-                                    priority="Low"
-                                    group="1"
-                                />
-                            </layoutData>
-                        </ToolbarSpacer>
 
-                        <tnt:ToolHeaderUtilitySeparator
-                            id="_IDGenToolHeaderUtilitySeparator32"
-                        />
                         <ToolbarSpacer
                             id="_IDGenToolbarSpacer231"
                             width="1.125rem"
@@ -488,7 +501,9 @@
                                         id="_IDGenTitle71"
                                         text="Service Catalog"
                                     />
-                                    <ToolbarSpacer id="_IDGenToolbarSpacer121" />
+                                    <ToolbarSpacer
+                                        id="_IDGenToolbarSpacer121"
+                                    />
                                 </Toolbar>
                             </f:toolbar>
                             <f:content>
@@ -505,19 +520,26 @@
                                             id="_IDGenInput87"
                                             width="200px"
                                         />
-
-                                        
                                     </VBox>
                                     <VBox id="_IDGenVBox2">
                                         <Label
                                             id="_IDGenLabel10"
                                             text="Overrun allowed"
                                         />
-                                        <Input
-                                            id="_IDGenInput"
-                                            width="200px"
-                                        />
-
+                                        <RadioButtonGroup
+                                            id="rbg2"
+                                            columns="2"
+                                            selectedIndex="2"
+                                        >
+                                            <RadioButton
+                                                id="RB2-1"
+                                                text="Yes"
+                                            />
+                                            <RadioButton
+                                                id="RB2-2"
+                                                text="No"
+                                            />
+                                        </RadioButtonGroup>
                                     </VBox>
                                 </VBox>
                             </f:content>
@@ -543,10 +565,20 @@
                                             id="_IDGenLabel656"
                                             text="Take or pay"
                                         />
-                                        <Input
-                                            id="_IDGenInput876"
-                                            width="200px"
-                                        />
+                                        <RadioButtonGroup
+                                            id="rg2"
+                                            columns="2"
+                                            selectedIndex="2"
+                                        >
+                                            <RadioButton
+                                                id="RB21"
+                                                text="Yes"
+                                            />
+                                            <RadioButton
+                                                id="RB-2"
+                                                text="No"
+                                            />
+                                        </RadioButtonGroup>
 
                                         <Label
                                             id="_IDGenLabelq2"
@@ -572,22 +604,20 @@
                                             id="_IDGenInut6132"
                                             width="200px"
                                         />
-
-                                        
                                     </VBox>
                                     <VBox id="_IDGenVBox62">
                                         <Label
                                             id="_IDGenLabel106"
-                                            text="Overrun allowed"
+                                            text="Over drawl"
                                         />
                                         <Input
-                                            id="_IDGenInput343"
+                                            id="_IDGnInput31"
                                             width="200px"
                                         />
 
                                         <Label
                                             id="_IDGenLabel1062"
-                                            text="Underrun allowed"
+                                            text="Under drawl"
                                         />
                                         <Input
                                             id="_IDGenInput6"
@@ -609,9 +639,19 @@
                                             id="_IDGenInpu61"
                                             width="200px"
                                         />
-
                                     </VBox>
                                 </VBox>
+                            </f:content>
+                        </f:SimpleForm>
+
+                        <f:SimpleForm id="_IDGenSimpleForm6">
+                            <f:content>
+                                <Button
+                                    id="_IDGenButton1"
+                                    text="Submit"
+                                    width="100px"
+                                    class="btn"
+                                />
                             </f:content>
                         </f:SimpleForm>
                     </Panel>

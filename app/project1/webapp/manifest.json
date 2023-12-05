@@ -146,7 +146,22 @@
           "target": [
             "TargetView7"
           ]
+        },
+        {
+          "name": "RouteView8",
+          "pattern": "view8",
+          "target": [
+            "TargetView8"
+          ]
+        },
+        {
+          "name": "RouteView9",
+          "pattern": "view9",
+          "target": [
+            "TargetView9"
+          ]
         }
+
       ],
       "targets": {
         "TargetView1": {
@@ -197,6 +212,20 @@
           "clearControlAggregation": false,
           "viewId": "View7",
           "viewName": "View7"
+        },
+        "TargetView8": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View8",
+          "viewName": "View8"
+        },
+        "TargetView9": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View9",
+          "viewName": "View9"
         }
       }
     },
