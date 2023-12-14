@@ -31,18 +31,18 @@ sap.ui.define([
                 this.setModel(models.createDeviceModel(), "device");
                 
             },
-            getHelper: function () {
-                var oFCL = this.getRootControl().byId("flex"),
-                    oParams = new URLSearchParams(window.location.search),
-                    oSettings = {
-                        defaultTwoColumnLayoutType: LayoutType.TwoColumnsMidExpanded,
-                        defaultThreeColumnLayoutType: LayoutType.ThreeColumnsMidExpanded,
-                        mode: oParams.get("mode"),
-                        maxColumnsCount: oParams.get("max")
-                    };
+            // getHelper: function () {
+            //     var oFCL = this.getRootControl().byId("flex"),
+            //         oParams = new URLSearchParams(window.location.search),
+            //         oSettings = {
+            //             defaultTwoColumnLayoutType: LayoutType.TwoColumnsMidExpanded,
+            //             defaultThreeColumnLayoutType: LayoutType.ThreeColumnsMidExpanded,
+            //             mode: oParams.get("mode"),
+            //             maxColumnsCount: oParams.get("max")
+            //         };
     
-                return FlexibleColumnLayoutSemanticHelper.getInstanceFor(oFCL, oSettings);
-            }
+            //     return FlexibleColumnLayoutSemanticHelper.getInstanceFor(oFCL, oSettings);
+            // }
         });
     }
 );

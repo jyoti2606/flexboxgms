@@ -107,31 +107,33 @@
         },
         {
           "name": "RouteView2",
-          "pattern": "view2/Details",
-          "layout": "TwoColumnsMidExpanded",
-          "target": [ "TargetView1",
+          "pattern": "view2",
+         
+          "target": [ 
             "TargetView2"
           ]
         },
         {
           "name": "RouteView3",
           "pattern": "view3",
-          "layout": "TwoColumnsMidExpanded",
-          "target": [ "TargetView1",
+        
+          "target": [ 
             "TargetView3"
           ]
         },
         {
           "name": "RouteView4",
-          "pattern": "view4",
-          "target": [
+          "pattern": "view4/Details",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ "TargetView1",
             "TargetView4"
           ]
         },
         {
           "name": "RouteView5",
           "pattern": "view5",
-          "target": [
+          "layout": "TwoColumnsMidExpanded",
+          "target": ["TargetView1",
             "TargetView5"
           ]
         },

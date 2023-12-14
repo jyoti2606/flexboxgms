@@ -13,11 +13,11 @@ sap.ui.define([
             },
             onGeneral:function() {
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("RouteView2");
+                oRouter.navTo("RouteView4");
             },
             onHeader:function() {
               const oRouter1 = this.getOwnerComponent().getRouter();
-              oRouter1.navTo("RouteView3");
+              oRouter1.navTo("RouteView5");
           },
           onItems:function() {
               const oRouter2 = this.getOwnerComponent().getRouter();
