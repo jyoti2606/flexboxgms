@@ -89,33 +89,35 @@
     },
     "routing": {
       "config": {
-        "routerClass": "sap.m.routing.Router",
+        "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
         "async": true,
         "viewPath": "project1.view",
-        "controlAggregation": "pages",
-        "controlId": "app",
-        "clearControlAggregation": false
+        "controlId": "flex",
+        "transition": "slide"
       },
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "",
+          "layout": "TwoColumnsMidExpanded",
           "target": [
-            "TargetView1"
+            "TargetView1", "TargetView2"
           ]
         },
         {
           "name": "RouteView2",
-          "pattern": "view2",
-          "target": [
+          "pattern": "view2/Details",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ "TargetView1",
             "TargetView2"
           ]
         },
         {
           "name": "RouteView3",
           "pattern": "view3",
-          "target": [
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ "TargetView1",
             "TargetView3"
           ]
         },
@@ -167,21 +169,21 @@
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
+          "controlAggregation": "beginColumnPages",
           "viewId": "View1",
           "viewName": "View1"
         },
         "TargetView2": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
+          "controlAggregation": "midColumnPages",
           "viewId": "View2",
           "viewName": "View2"
         },
         "TargetView3": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
+          "controlAggregation": "midColumnPages",
           "viewId": "View3",
           "viewName": "View3"
         },
